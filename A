@@ -1,0 +1,19 @@
+using System.Collections.Specialized;
+using System.Text;
+
+namespace ahmedc_1.frist_work
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+            double[] cin=Array.ConvertAll(Console.ReadLine().Split(),double.Parse);
+            double n = cin[0], m = cin[1];
+            double afte = 100 - n;
+            double discond=m/afte;
+            double org = (discond * n) + m;
+            Console.WriteLine(org.ToString("F2"));
+        }
+    }
+}
