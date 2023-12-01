@@ -1,0 +1,31 @@
+using System.Collections.Specialized;
+using System.Text;
+
+namespace ahmedc_1.frist_work
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+            long[] cin = Array.ConvertAll(Console.ReadLine().Split(), long.Parse);
+            long a = cin[0], b = cin[1], c = cin[2];
+            if (a%c==0&&b%c==0)
+            {
+                Console.WriteLine("Both");
+            }
+            else if (a % c == 0 && b % c != 0)
+            {
+                Console.WriteLine("Memo");
+            }
+            else if (a % c != 0 && b % c == 0)
+            {
+                Console.WriteLine("Momo");
+            }
+            else
+            {
+                Console.WriteLine("No One");
+            }
+        }
+    }
+}
