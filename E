@@ -1,0 +1,23 @@
+using System.Collections.Specialized;
+using System.Text;
+
+namespace ahmedc_1.frist_work
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+            long[] cin = Array.ConvertAll(Console.ReadLine().Split(), long.Parse);
+            long a = cin[0], b = cin[1];
+            if (Math.Abs(a-b)<2&&a!=0&&b!=0)
+            {
+                Console.WriteLine("YES");
+            }
+            else
+            {
+                Console.WriteLine("NO");
+            }
+        }
+    }
+}
